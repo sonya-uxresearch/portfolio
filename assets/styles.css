@@ -84,7 +84,7 @@ p:last-child{ margin-bottom: 0; }
 
 /* ---------- skip link / focus ---------- */
 .skip-link{
-  position:absolute; left:-999px; top:0; background:var(--forest); color:#fff;
+  position:absolute; left:-999px; top:0; background:var(--rose); color:#fff;
   padding:10px 16px; z-index:200; font-family:var(--mono); font-size:14px;
 }
 .skip-link:focus{ left:16px; top:16px; }
@@ -124,7 +124,7 @@ a:focus-visible, button:focus-visible{
   text-decoration:none; padding: 6px 2px; border-bottom: 2px solid transparent;
 }
 .nav-links a:hover, .nav-links a[aria-current="page"]{
-  border-bottom-color: var(--forest);
+  border-bottom-color: var(--rose);
 }
 .nav-toggle{ display:none; }
 
@@ -146,7 +146,7 @@ a:focus-visible, button:focus-visible{
 
 /* ---------- hero ---------- */
 .hero{
-  background: var(--forest-deep);
+  background: var(--rose-deep);
   color: #F4F1E6;
   padding: 84px 0 96px;
   position: relative;
@@ -202,7 +202,7 @@ section{ padding: 76px 0; }
   text-decoration:none;
   color: var(--ink);
   display:flex; flex-direction:column; gap: 14px;
-  border-top: 6px solid var(--tag-color, var(--forest));
+  border-top: 6px solid var(--tag-color, var(--rose));
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .case-card:hover{
@@ -212,7 +212,7 @@ section{ padding: 76px 0; }
 .case-card .badge{
   display:inline-flex; align-items:center; gap:6px;
   font-family: var(--mono); font-size: 12px; text-transform:uppercase; letter-spacing:0.08em;
-  color: var(--tag-color, var(--forest));
+  color: var(--tag-color, var(--rose));
 }
 .case-card h3{
   font-size: 26px; margin: 0;
@@ -262,7 +262,7 @@ section{ padding: 76px 0; }
 /* ---------- pull quote ---------- */
 blockquote{
   margin: 32px 0; padding: 4px 0 4px 24px;
-  border-left: 4px solid var(--tag-color, var(--forest));
+  border-left: 4px solid var(--tag-color, var(--rose));
   font-style: italic; font-size: 22px; color: var(--ink);
 }
 blockquote cite{
@@ -286,7 +286,7 @@ blockquote cite{
 
 /* ---------- case study page ---------- */
 .case-band{
-  background: var(--tag-color, var(--forest));
+  background: var(--tag-color, var(--rose));
   color: #FBFAF3;
   padding: 18px 0;
 }
@@ -307,7 +307,7 @@ blockquote cite{
 .case-meta-row strong{ display:block; color: var(--ink); font-size: 14px; }
 
 .impact-box{
-  background: var(--tag-tint, var(--forest-tint));
+  background: var(--tag-tint, var(--rose-tint));
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 32px;
@@ -336,7 +336,7 @@ blockquote cite{
 .deliverables{ display:flex; flex-wrap:wrap; gap: 10px; margin-top: 12px; }
 .deliverables span{
   font-family: var(--mono); font-size: 13px; padding: 8px 14px;
-  background: var(--tag-tint, var(--forest-tint)); border-radius: var(--radius);
+  background: var(--tag-tint, var(--rose-tint)); border-radius: var(--radius);
 }
 
 .case-figure{ margin: 32px 0; }
@@ -362,12 +362,12 @@ blockquote cite{
   transition: background .15s ease, color .15s ease;
 }
 .btn:hover{ background: var(--ink); color: var(--paper); }
-.btn--solid{ background: var(--forest); border-color: var(--forest); color: #fff; }
-.btn--solid:hover{ background: var(--forest-deep); border-color: var(--forest-deep); color:#fff; }
+.btn--solid{ background: var(--rose); border-color: var(--rose); color: #fff; }
+.btn--solid:hover{ background: var(--rose-deep); border-color: var(--rose-deep); color:#fff; }
 
 /* ---------- footer ---------- */
 footer.site-footer{
-  background: var(--forest-deep); color: #E7E2CF; padding: 56px 0 40px; margin-top: 96px;
+  background: var(--rose-deep); color: #E7E2CF; padding: 56px 0 40px; margin-top: 96px;
 }
 .site-footer .wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; gap: 24px; }
 .site-footer a{ color: #F4F1E6; text-decoration:none; }
