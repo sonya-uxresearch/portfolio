@@ -377,11 +377,11 @@ footer.site-footer{
 
 /* ---------- contact page ---------- */
 .contact-card{
-  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 40px; display:grid; gap: 18px;
+  background: transparent; border: none; box-shadow: none;
+  padding: 0px;
 }
-.contact-row{ display:flex; align-items:baseline; gap: 14px; font-family: var(--mono); font-size:16px; }
-.contact-row .eyebrow{ min-width: 110px; }
+.contact-row{ display:flex; align-items:baseline; gap: 14px; font-family: inherit; font-size:16px; }
+.contact-row .eyebrow{ min-width: 110px; font-family: var(--mono) }
 
 /* ---------- reveal-on-scroll ---------- */
 .reveal{ opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
