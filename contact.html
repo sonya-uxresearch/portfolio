@@ -4,8 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Sonya Silva</title>
-<meta name="description" content="Get in touch with Sonya Silva, UX Researcher and Service Designer.">
+<meta name="description" content="Get in touch with Sonya Silva for user research, service design, and strategic facilitation inquiries.">
 <link rel="stylesheet" href="assets/styles.css">
+<style>
+  /* Mobile-responsive font sizing */
+  .contact-lede {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 640px;
+  }
+  
+  /* Vertical spacing between Email, LinkedIn, and Based in */
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjusts vertical padding between each line */
+    margin: 32px 0;
+    padding: 16px 0;
+  }
+
+  .contact-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    word-break: break-word; /* Prevents text overflow on narrow mobile screens */
+  }
+
+  .contact-line strong {
+    min-width: 90px;
+    color: var(--ink);
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -25,24 +56,25 @@
 </header>
 
 <main id="main">
-  <section>
-    <div class="wrap wrap--narrow">
+  <section style="padding-bottom:48px;">
+    <div class="wrap">
       <span class="eyebrow">Get in touch</span>
-      <h1 style="font-size:clamp(38px,6vw,60px); margin-top:8px;">Let's talk.</h1>
-      <p style="font-size:19px; color:var(--ink-soft); max-width:520px;">Whether you've got a problem to discuss, a design in mind, or just want to talk research methods, I'd love to hear from you.</p>
+      <h1 style="font-size:clamp(38px,6vw,64px); margin-top:8px;">Let's work together.</h1>
+      <p class="contact-lede">Have a complex service design challenge, a research need, or a project in mind? I'd love to hear from you.</p>
 
-      <div class="contact-card reveal" style="margin-top:40px;">
-        <div class="contact-row">
-          <span class="eyebrow">Email</span>
-          <a href="mailto:sonya.uxresearch@gmail.com">sonya.uxresearch@gmail.com</a>
+      <!-- Contact details with extra padding/gap between lines -->
+      <div class="contact-details">
+        <div class="contact-line">
+          <strong>Email:</strong> 
+          <a href="mailto:hello@sonyasilva.com">hello@sonyasilva.com</a>
         </div>
-        <div class="contact-row">
-          <span class="eyebrow">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/sonyasilva/">linkedin.com/in/sonyasilva</a>
+        <div class="contact-line">
+          <strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/sonyasilva/" target="_blank" rel="noopener">linkedin.com/in/sonyasilva</a>
         </div>
-        <div class="contact-row">
-          <span class="eyebrow">Based in</span>
-          <span>Europe, but working globally</span>
+        <div class="contact-line">
+          <strong>Based in:</strong> 
+          <span>Toronto, Canada / Available globally</span>
         </div>
       </div>
     </div>
@@ -59,7 +91,7 @@
       </div>
     </div>
   </div>
-  <div class="wrap"><small>&copy; 2026 Sonya Silva. UX Research &amp; Service Design.</small></div>
+  <div class="wrap"><small style="color: inherit;">&copy; 2026 Sonya Silva. User Research, Service Design, &amp; Facilitation</small></div>
 </footer>
 
 <script src="assets/script.js"></script>
