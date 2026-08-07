@@ -6,6 +6,35 @@
 <title>About — Sonya Silva</title>
 <meta name="description" content="UX Researcher, Service Designer, and Facilitator with 15 years of experience in the social impact sector.">
 <link rel="stylesheet" href="assets/styles.css">
+<style>
+  /* Fluid typography & responsive contact line spacing */
+  .about-text {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  
+  .contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Controls vertical spacing between lines */
+    margin: 32px 0;
+    padding: 16px 0;
+  }
+
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    word-break: break-word; /* Prevents long email links from overflowing on mobile */
+  }
+
+  .about-photo {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -32,13 +61,30 @@
     <div class="reveal">
       <span class="eyebrow">About</span>
       <h1 style="font-size:clamp(34px,5vw,52px); margin-top:8px;">Hello, I'm Sonya.</h1>
-      <p style="font-size:21px; font-style:italic; color:var(--ink-soft);">I'm a UX Researcher, Service Designer, and Facilitator with 15 years of experience in the social impact sector. I've worked in North America, the UK and Europe, East Africa, and South Asia.</p>
       
-      <p style="font-size:21px; font-style:normal; color:var(--ink-soft);">I am a Portuguese-Canadian who grew up in Toronto, Canada. Coming from a family of immigrants, being the first in my family to graduate high school and higher education gave me a unique perspective on navigating education paths and opportunities.</p>
+      <p class="about-text" style="font-style:italic;">I'm a UX Researcher, Service Designer, and Facilitator with 15 years of experience in the social impact sector. I've worked in North America, the UK and Europe, East Africa, and South Asia.</p>
+
+      <!-- Added padded, mobile-responsive contact details section -->
+      <div class="contact-info-list">
+        <div class="contact-info-item">
+          <strong>Email:</strong> 
+          <a href="mailto:hello@sonyasilva.com">hello@sonyasilva.com</a>
+        </div>
+        <div class="contact-info-item">
+          <strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/sonyasilva/" target="_blank" rel="noopener">linkedin.com/in/sonyasilva</a>
+        </div>
+        <div class="contact-info-item">
+          <strong>Based in:</strong> 
+          <span>Toronto, Canada / Available globally</span>
+        </div>
+      </div>
       
-      <p style="font-size:21px; font-style:normal; color:var(--ink-soft);">Working for 15 years in the social impact sector in across 4 continents in the areas of child and youth development, sustainability, food security, and mental health has given me a unique eye for assessing the invisible ways systems and services are designed to hinder or advance equity. These lived and work experiences fuel my passion for equity and justice and drive my interest in how research and service design can be used to build a social safety net and foster systems change.</p>
+      <p class="about-text">I am a Portuguese-Canadian who grew up in Toronto, Canada. Coming from a family of immigrants, being the first in my family to graduate high school and higher education gave me a unique perspective on navigating education paths and opportunities.</p>
       
-      <p style="font-size:21px; font-style:normal; color:var(--ink-soft);">When I’m not researching and designing services for planetary and human well-being, I follow my creative passions including writing, yoga, running, photography, and learning how to live off home-grown foods.</p>
+      <p class="about-text">Working for 15 years in the social impact sector across 4 continents in the areas of child and youth development, sustainability, food security, and mental health has given me a unique eye for assessing the invisible ways systems and services are designed to hinder or advance equity. These lived and work experiences fuel my passion for equity and justice and drive my interest in how research and service design can be used to build a social safety net and foster systems change.</p>
+      
+      <p class="about-text">When I’m not researching and designing services for planetary and human well-being, I follow my creative passions including writing, yoga, running, photography, and learning how to live off home-grown foods.</p>
     </div>
   </div>
 </section>
@@ -97,7 +143,7 @@
       </div>
     </div>
   </div>
-    <div class="wrap"><small style="color: inherit;">&copy; 2026 Sonya Silva. User Research, Service Design, &amp; Facilitation</small></div>
+  <div class="wrap"><small style="color: inherit;">&copy; 2026 Sonya Silva. User Research, Service Design, &amp; Facilitation</small></div>
 </footer>
 
 <script src="assets/script.js"></script>
