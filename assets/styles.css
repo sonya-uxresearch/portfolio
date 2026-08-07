@@ -339,10 +339,39 @@ blockquote cite{
   background: var(--tag-tint, var(--rose-tint)); border-radius: var(--radius);
 }
 
-.case-figure{ margin: 32px 0; }
-.case-figure img{ border-radius: var(--radius); border: 1px solid var(--line); }
-.case-figure figcaption{
-  font-family: var(--mono); font-size: 13px; color: var(--ink-soft); margin-top: 10px;
+/* ---------- figure & caption ---------- */
+.case-figure {
+  margin: 32px 0;
+  text-align: center;
+}
+
+.case-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  transition: opacity 0.2s ease;
+}
+
+.case-figure a:hover img {
+  opacity: 0.92;
+}
+
+.case-caption {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-align: left;
+}
+
+.case-caption a {
+  color: var(--ink-soft);
+  text-decoration: underline;
+}
+
+.case-caption a:hover {
+  color: var(--ink);
 }
 
 .case-nav{
